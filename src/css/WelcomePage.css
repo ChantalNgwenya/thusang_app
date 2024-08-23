@@ -1,0 +1,87 @@
+/* WelcomePage.css */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #788F70;
+  padding: 20px;
+}
+
+.logo {
+  width: 80%; /* Adjust for mobile screens */
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+h1, p {
+  font-size: 18px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.scrolling-message {
+  color: #253359;
+  font-weight: bolder;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.dot {
+  justify-content: center;
+  height: 6px;
+  width: 6px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007BFF;
+}
+
+.account-button, .login-button {
+  width: 70%;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 48px;
+}
+
+.account-button {
+  background-color: #000;
+  color: white;
+}
+
+.login-button {
+  background-color: #004a64;
+  color: white;
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 600px) {
+  .welcome-container {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 350px; /* Adjust the size for smaller screens */
+  }
+
+  h1, p {
+    font-size: 16px;
+  }
+
+  .account-button, .login-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
