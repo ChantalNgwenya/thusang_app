@@ -1,63 +1,91 @@
-.login-container {
+/* Container for the entire signup page */
+.signup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center content vertically */
   padding: 20px;
-  background-color: #c6d7c7;
-  height: 100vh;
+  background-color: #a6b5a6; /* Adjusted background color */
+  height: 100vh; /* Full viewport height */
 }
 
+/* Sign-up title */
 h1 {
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 20px;
+  font-size: 32px; /* Exact match for font size */
+  color: #064e5b; /* Adjusted to match the text color */
+  margin-bottom: 15px; /* Adjusted margin */
+  font-weight: bold; /* Ensure boldness matches */
 }
 
+/* Welcome image styling */
 .welcome-image {
-  width: 80%;
-  max-width: 400px;
-  margin-bottom: 20px;
+  width: 50px; /* Smaller image */
+  margin-bottom: 15px; /* Adjusted margin */
 }
 
-.login-form {
+/* Styling the sign-up form */
+.signup-form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 300px;
+  max-width: 340px; /* Adjusted max-width */
+  background-color: #0a2c30; /* Dark blue-green background */
+  padding: 25px; /* Adjusted padding */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.login-form input {
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+/* Input fields within the form */
+.signup-form input {
+  padding: 10px 12px; /* Reduced padding */
+  margin-bottom: 12px; /* Adjusted margin */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #094e5b; /* Teal border */
   font-size: 16px;
+  background-color: #06282c; /* Dark background for input fields */
+  color: white; /* White text color */
 }
 
-.login-form button {
-  padding: 15px 20px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #004e5b;
+/* Placeholder text color */
+.signup-form input::placeholder {
+  color: #b0c4c7; /* Light gray for placeholders */
+  font-size: 14px;
+}
+
+/* Styling for the submit button */
+.signup-form button {
+  padding: 15px; /* Adjust padding */
+  font-size: 16px; /* Exact font size */
+  color: #fff; /* White text */
+  background-color: #007b83; /* Teal background */
+  background-image: linear-gradient(135deg, #007b83 0%, #004e5b 100%); /* Gradient matching the original */
   border: none;
-  border-radius: 25px;
+  border-radius: 30px; /* More rounded corners */
   cursor: pointer;
+  width: 100%; /* Full width button */
+  font-weight: bold; /* Ensure text is bold */
+  text-align: center; /* Center text */
 }
 
-.login-form button:hover {
-  background-color: #003841;
+/* Hover state for the submit button */
+.signup-form button:hover {
+  background-color: #005f64; /* Darker teal on hover */
 }
 
+/* Styling for the login link */
 .login-link {
-  margin-top: 20px;
-  color: #004e5b;
+  margin-top: 15px; /* Adjusted margin */
+  color: #004e5b; /* Dark teal color */
+  font-size: 14px; /* Adjusted font size */
 }
 
+/* Link inside the login prompt */
 .login-link a {
   color: #004e5b;
   text-decoration: none;
 }
 
+/* Hover state for the login link */
 .login-link a:hover {
   text-decoration: underline;
 }

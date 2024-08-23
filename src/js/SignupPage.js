@@ -1,12 +1,15 @@
 import React from 'react';
 import '../css/SignupPage.css';
-// import welcomeImage from './WelcomeImage.jpg'; // Add your image here
+// import welcomeImage from './WelcomeImage.jpg'; // Uncomment and add your image
 
 const SignUpPage = () => {
   return (
     <div className="signup-container">
       <h1>Sign up</h1>
       {/* <img src={welcomeImage} alt="Welcome" className="welcome-image" /> */}
+      <div className="welcome-image">
+        <img src="path_to_your_image.jpg" alt="Welcome" />
+      </div>
       <form className="signup-form">
         <input type="email" placeholder="Email" />
         <input type="text" placeholder="Username" />

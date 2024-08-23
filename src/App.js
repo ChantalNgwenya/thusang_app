@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import WelcomePage from './js/WelcomePage';
 // import SignupPage from './js/SignupPage';
 // import LoginPage from './js/LoginPage';
-// import LoginPage from './js/LandingPage';
+import LandingPage from './js/LandingPage';
 // import LoginPage from './js/AppointmentPage;';
 
 import './App.css';
@@ -17,7 +17,7 @@ function App() {
         {/* <Route path="/" element={<WelcomePage />} /> */}
         {/* <Route path="/" element={<SignupPage />} /> */}
         {/* <Route path="/" element={<LoginPage />} /> */}
-        {/* <Route path="/" element={<LandingPage />} /> */}
+        <Route path="/" element={<LandingPage />} />
         {/* <Route path="/" element={<AppointmentPage />} /> */}
       </Routes>
     </Router>
