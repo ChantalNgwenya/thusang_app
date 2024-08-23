@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
-import { Link } from 'react-router-dom'; // Import Link
+// import { Link } from 'react-router-dom'; // Import Link
 
-import '../css/SignupPage.css';
+import '../css/WelcomePage.css';
 
 import logo from '../Thusang-logo.jpg'; // Make sure this path is correct
 
@@ -52,9 +52,7 @@ const WelcomePage = () => {
           ></span>
         ))}
       </div>
-      <Link to="/signup">
         <button className="account-button">Create an Account</button>
-      </Link>
       <button className="login-button">Login</button>
     </div>
   );

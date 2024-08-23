@@ -1,40 +1,75 @@
 body {
-  background-color: #849373;
+  background-color: #d3d3d3; /* Light gray background */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling on the body */
 }
 
-.app {
-  text-align: center;
-  color: white;
+.phone-frame {
+  width: 360px;
+  height: 740px;
+  background-color: #000000;
+  border-radius: 36px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling within the phone frame */
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  background-color: #849373;
+  border-radius: 24px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.welcome-text {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .name {
-  color: #1e88e5; /* Blue color */
+  color: #1e88e5;
 }
 
-.search-bar {
-  margin: 20px auto;
+.greeting {
+  font-size: 18px;
+  color: #6fbcf5;
+}
+
+.icon-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-bar input {
-  border: none;
-  border-radius: 20px;
+  justify-content: flex-end;
   padding: 10px 20px;
-  width: 80%;
-  max-width: 400px;
 }
 
-.search-icon {
-  margin-left: -30px;
+.icon {
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.categories-text {
+  font-size: 20px;
+  margin-bottom: -10px;
+  margin-left: 20px;
 }
 
 .categories {
@@ -48,26 +83,16 @@ body {
   background-color: #2e3b4e;
   border-radius: 20px;
   padding: 20px;
-  width: 150px;
+  width: 100px;
   margin: 10px;
   text-align: center;
 }
 
 .icon {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
-/* .footer-nav {
-  background-color: #2e3b4e;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-} */
-
-.nav-item {
-  flex: 1;
-  padding: 10px;
-  color: #ccc;
-  cursor: pointer;
+p {
+  color: white;
 }
