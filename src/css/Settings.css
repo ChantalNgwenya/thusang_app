@@ -1,0 +1,56 @@
+/* Settings.css */
+
+.settings-container {
+    background-color: #76866c;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .settings-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: black;
+    flex-grow: 1;
+    margin: 0;
+  }
+  
+  .settings-list {
+    margin-top: 20px;
+  }
+  
+  .settings-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+  }
+  
+  .settings-item .icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .settings-item span {
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .arrow {
+    font-size: 18px;
+    color: #000;
+  }
+  
