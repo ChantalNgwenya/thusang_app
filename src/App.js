@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import SignupPage from './js/SignupPage';
 // import LoginPage from './js/LoginPage';
 import LandingPage from './js/LandingPage';
-// import LoginPage from './js/AppointmentPage;';
+// import AppointmentPage from './js/Appointment';
 
 import './App.css';
 
