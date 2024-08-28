@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'; // Import useState and useEf
 
 import '../css/WelcomePage.css';
 
-import logo from '../Thusang-logo.jpg'; // Make sure this path is correct
+import logo from '../images/Thusang-logo.jpg'; // Make sure this path is correct
 
 
 const WelcomePage = () => {
