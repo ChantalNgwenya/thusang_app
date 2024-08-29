@@ -14,6 +14,13 @@
   .back-button {
     font-size: 24px;
     cursor: pointer;
+    background-color:#6B7663;
+    /* position: absolute; */
+    width: 22px;
+    height: 34px;
+    left: 35px;
+    top: 89.3px;
+
   }
   
   .header h1 {
@@ -23,7 +30,12 @@
     color: #000000;
   }
   
-  /* .icons {
+.consultation-grid{
+  height: 658px;
+
+}  
+
+/* .icons {
     display: flex;
     gap: 10px;
   }

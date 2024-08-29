@@ -61,7 +61,9 @@ const styless = {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)', // Adjust columns based on the layout
     gap: '20px',
+    height: '650px',
     padding: '20px',
+    
   },
 };
 
@@ -84,11 +86,12 @@ const styles = {
     alignItems: 'center',
     backgroundColor: '#314c53', // Button background color
     padding: '10px',
-    borderRadius: '10px',
+    borderRadius: '25px',
     margin: '10px',
     textAlign: 'center',
     color: 'white',
-    width: '100px',
+    width: '123px',
+    height: '123px'
   },
   icon: {
     width: '50px',
