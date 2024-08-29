@@ -43,7 +43,7 @@ const AppointmentCard = ({ title }) => (
     <div className="appointment-card">
       <div className="card-content">
         <img
-          src={require('../dogg.png')}
+          src={require('../images/dogg.png')}
           alt="No appointments"
           className="appointment-image"
         />

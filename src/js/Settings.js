@@ -40,6 +40,12 @@ const Settings = () => {
           <span className="arrow">›</span>
         </div>
       </div>
+    <footer className="footer-nav">
+        <span className="nav-icon">🏠</span>
+        <span className="nav-icon">💻</span>
+        <span className="nav-icon">🗓️</span>
+        <span className="nav-icon">⚙️</span>
+    </footer>
     </div>
   );
 };
