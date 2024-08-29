@@ -1,16 +1,20 @@
 import React from 'react';
-import '../css/AppointmentPage.css';
-import { FaArrowLeft, FaSearch, FaUserCircle, FaHome, FaUserMd, FaCalendarAlt, FaCogs } from 'react-icons/fa'; // Importing icons
+import '../css/AppointmentPage.css'; // Make sure this path is correct
+import { FaArrowLeft, FaSearch, FaUserCircle, FaHome, FaUserMd, FaCalendarAlt, FaCogs } from 'react-icons/fa';
 
 function App() {
   return (
-    <div className="app-container">
-      <Header />
-      <div className="content">
-        <AppointmentCard title="Upcoming appointments" />
-        <AppointmentCard title="Previous appointments" />
+    <div className="phone-container">
+      <div className="phone-frame">
+        <div className="app-container">
+          <Header />
+          <div className="content">
+            <AppointmentCard title="Upcoming appointments" />
+            <AppointmentCard title="Previous appointments" />
+          </div>
+          <FooterNavigation />
+        </div>
       </div>
-      <FooterNavigation />
     </div>
   );
 }

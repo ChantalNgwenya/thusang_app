@@ -1,10 +1,38 @@
-.app-container {
+/* Phone Container */
+.phone-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  background-color: #d0d7be;
+  background-color: #f0f0f0; /* Light grey background */
+  transform: scale(0.8); /* Scale down to 80% */
+  transform-origin: center; /* Center the scaling */
 }
 
+/* iPhone Frame */
+.phone-frame {
+  width: 375px; /* Adjust width based on the iPhone model */
+  height: 812px; /* Adjust height based on the iPhone model */
+  background-image: url('../iphone.png'); /* Replace with the correct path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px; /* Adjust padding to fit the screen area */
+}
+
+/* App Container */
+.app-container {
+  width: 100%; /* Full width inside the phone frame */
+  height: 100%; /* Full height inside the phone frame */
+  background-color: #d0d7be;
+  border-radius: 30px; /* Adjust to fit inside the iPhone frame */
+  overflow: hidden;
+}
+
+/* Rest of your CSS remains the same */
 .header {
   display: flex;
   justify-content: space-between;
@@ -76,7 +104,6 @@
   text-decoration: none;
 }
 
-
 .appointment-card {
   background-color: #ffffff;
   padding: 20px;
@@ -111,7 +138,7 @@
 
 .footer-navigation .icon {
   font-size: 24px;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 

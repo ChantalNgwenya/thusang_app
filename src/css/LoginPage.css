@@ -1,63 +1,107 @@
-.signup-container {
+.signup-page {
+  background-color: #788F70;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 20px;
-  background-color: #c6d7c7;
-  height: 100vh;
+  font-family: 'Arial', sans-serif;
 }
 
-h1 {
-  font-size: 32px;
-  color: #333;
+.header h1 {
+  color: #000000;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
 .welcome-image {
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.signup-form {
+.welcome-image img {
+  width: 100%; 
+  max-width: 360px;
+  height: auto;
+}
+
+.blue-container {
+  width: 393px;
+  height: 364px;
+  background-color: #041B23;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.input-group {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 300px;
-}
-
-.signup-form input {
-  padding: 12px 15px;
+  align-items: center;
   margin-bottom: 15px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 16px;
 }
 
-.signup-form button {
-  padding: 15px 20px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #004e5b;
+.input-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.input-group span {
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff; /* Add a white bottom border */
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 15px; /* Add some space between inputs */
+}
+
+.blue-container input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff; /* Ensure the bottom border is applied here as well */
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  background-color: #0C4152; /* Darker blue button */
   border: none;
   border-radius: 25px;
+  padding: 15px;
+  width: 100%;
+  color: #000000;
+  font-size: 18px;
   cursor: pointer;
-}
-
-.signup-form button:hover {
-  background-color: #003841;
+  margin-top: 15px;
+  font-weight: 690;
 }
 
 .login-link {
-  margin-top: 20px;
-  color: #004e5b;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .login-link a {
-  color: #004e5b;
+  color: #788F70;
   text-decoration: none;
 }
 
-.login-link a:hover {
-  text-decoration: underline;
-}

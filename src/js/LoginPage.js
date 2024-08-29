@@ -1,21 +1,40 @@
 import React from 'react';
 import '../css/LoginPage.css';
-// import welcomeImage from './WelcomeImage.jpg'; // Add your image here
+import welcomeImage from '../18.png';
+import { MdEmail, MdPerson, MdLock } from 'react-icons/md';
 
-const LoginPage = () => {
-  return (
-    <div className="login-container">
-      <h1>Login</h1>
-      {/* <img src={welcomeImage} alt="Welcome" className="welcome-image" /> */}
-      <form className="login-form">
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button type="submit">Create an Account</button>
-      </form>
-      <p className="login-link">Already have an account? <a href="/login">Login</a></p>
-    </div>
-  );
-};
+const Login = () => {
+    return (
+        <div className="login-page">
+            <div className="header">
+                <h1>Login</h1>
+            </div>
+            <div className="welcome-image">
+                <img src={welcomeImage} alt="Welcome" />
+            </div>
+            <div className="blue-container">
+                <form>
+                    <div className="input-group">
+                        <MdEmail className="input-icon" />
+                        <span>|</span>
+                        <input type="email" placeholder="Email" required />
+                    </div>
+                    <div className="input-group">
+                        <MdPerson className="input-icon" />
+                        <span>|</span>
+                        <input type="text" placeholder="Username" required />
+                    </div>
+                    <div className="input-group">
+                        <MdLock className="input-icon" />
+                        <span>|</span>
+                        <input type="password" placeholder="Password" required />
+                    </div>
+                    <button type="submit">Create an Account</button>
+                    <p className="login-link">Already have an account? <a href="/login">Login</a></p>
+                </form>
+            </div>
+        </div>
+    );
+}
 
-export default LoginPage;
+export default Login;

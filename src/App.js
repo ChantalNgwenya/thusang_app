@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import WelcomePage from './js/WelcomePage';
 // import SignupPage from './js/SignupPage';
 // import LoginPage from './js/LoginPage';
-import LandingPage from './js/LandingPage';
-// import AppointmentPage from './js/Appointment';
+// import LandingPage from './js/LandingPage';
+import AppointmentPage from './js/Appointment';
 
 import './App.css';
 
@@ -17,8 +17,8 @@ function App() {
         {/* <Route path="/" element={<WelcomePage />} /> */}
         {/* <Route path="/" element={<SignupPage />} /> */}
         {/* <Route path="/" element={<LoginPage />} /> */}
-        <Route path="/" element={<LandingPage />} />
-        {/* <Route path="/" element={<AppointmentPage />} /> */}
+        {/* <Route path="/" element={<LandingPage />} /> */}
+        <Route path="/" element={<AppointmentPage />} />
       </Routes>
     </Router>
   );
