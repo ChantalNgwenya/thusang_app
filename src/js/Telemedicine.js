@@ -1,6 +1,13 @@
 import React from 'react';
 import '../css/Telemedicine.css';
-import ambulanceIcon from '../images/dogg.png'; // Example icon import
+import childlineIcon from '../images/childline.png';
+import ambulanceIcon from '../images/ambulance.png'; 
+import legalIcon from '../images/legal.png'; 
+import sosIcon from '../images/sos.png'; 
+import rapeIcon from '../images/rape.png'; 
+import suicideIcon from '../images/suicide.png'; 
+import policeIcon from '../images/police.png'; 
+
 
 import { FaArrowLeft, FaSearch, FaUserCircle, FaHome, FaUserMd, FaCalendarAlt, FaCogs } from 'react-icons/fa'; // Importing icons
 
@@ -36,13 +43,13 @@ const Header = () =>(
 
 const EmergencyGrids = () =>{
   const emergencyItems = [
-    { icon: ambulanceIcon, title: 'NATIONWIDE EMERGENCY RESPONSE', phoneNumber: '10111 / 112' },
+    { icon: sosIcon, title: 'NATIONWIDE EMERGENCY RESPONSE', phoneNumber: '10111 / 112' },
     { icon: ambulanceIcon, title: 'AMBULANCE', phoneNumber: '10 111' },
-    { icon: ambulanceIcon, title: 'POLICE', phoneNumber: '10111' },
-    { icon: ambulanceIcon, title: 'CHILDLINE', phoneNumber: '080 005 5555' },
-    { icon: ambulanceIcon, title: 'SUICIDE HELP', phoneNumber: '080 058 7567' },
-    { icon: ambulanceIcon, title: 'RAPE CRISIS', phoneNumber: '021 447 9762' },
-    { icon: ambulanceIcon, title: 'LEGAL AID', phoneNumber: '080 110 110' },
+    { icon: policeIcon, title: 'POLICE', phoneNumber: '10111' },
+    { icon: childlineIcon, title: 'CHILDLINE', phoneNumber: '080 005 5555' },
+    { icon: suicideIcon, title: 'SUICIDE HELP', phoneNumber: '080 058 7567' },
+    { icon: rapeIcon, title: 'RAPE CRISIS', phoneNumber: '021 447 9762' },
+    { icon: legalIcon, title: 'LEGAL AID', phoneNumber: '080 110 110' },
   ];
   return (
     <div style={styless.gridContainer}>
@@ -84,7 +91,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: '#314c53', // Button background color
+    backgroundColor: '#0C4152', // Button background color
     padding: '10px',
     borderRadius: '25px',
     margin: '10px',
