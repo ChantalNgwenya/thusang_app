@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/SignupPage.css';
-import welcomeImage from '../2.png'; // Ensure this path is correct
+import welcomeImage from '../images/signup.png'; // Ensure this path is correct
 import { MdEmail, MdPerson, MdPhone, MdLock } from 'react-icons/md';
 
 const SignUp = () => {
