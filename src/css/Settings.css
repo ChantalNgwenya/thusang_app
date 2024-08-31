@@ -14,9 +14,10 @@
 }
 
 .settings-container {
-  background-color: #76866c;
-  height: 100vh;
-  padding: 20px;
+  width: 97%;
+  padding: 18px;
+  flex-grow: 1;
+  overflow-y: auto; 
 }
 
 .settings-header {
