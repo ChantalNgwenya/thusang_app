@@ -1,50 +1,63 @@
-.signup-page {
+.phone-screen {
+  width: 340px;
+  height: 750px;
+  border: 12px solid black;
+  border-radius: 45px;
+  padding: 16px;
   background-color: #788F70;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  position: relative;
+}
+
+.signup-page {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0 20px; /* Reduce padding to make content fit better */
   font-family: 'Arial', sans-serif;
 }
 
 .header h1 {
   color: #000000;
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 28px; /* Adjusted font-size to better fit the screen */
+  margin-bottom: 10px;
 }
 
 .welcome-image {
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Adjust margin for better spacing */
 }
 
 .welcome-image img {
   width: 100%; 
-  max-width: 360px;
+  max-width: 280px; /* Reduced image width to fit the screen */
   height: auto;
 }
 
 .blue-container {
-  width: 393px;
-  height: 364px;
+  width: 332px; /* Ensure container width matches the screen */
+  height: 362px;
   background-color: #041B23;
   border-radius: 15px;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 10px; /* Adjusted margin to fit better */
   color: #ffffff;
 }
 
 .input-group {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
 }
 
 .input-icon {
-  font-size: 24px;
+  font-size: 20px; /* Slightly reduce icon size */
   color: #ffffff;
 }
 
@@ -60,42 +73,29 @@ input[type="password"] {
   padding: 10px;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #ffffff; /* Add a white bottom border */
+  border-bottom: 2px solid #ffffff;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 16px; /* Adjust font size to fit the screen */
   outline: none;
-  margin-bottom: 15px; /* Add some space between inputs */
-}
-
-.blue-container input[type="email"],
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 12px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #ffffff; /* Ensure the bottom border is applied here as well */
-  color: #ffffff;
-  font-size: 16px;
-  outline: none;
+  margin-bottom: 22px;
 }
 
 button {
-  background-color: #0C4152; /* Darker blue button */
+  background-color: #0C4152;
   border: none;
   border-radius: 25px;
-  padding: 15px;
+  padding: 10px; /* Reduced padding to fit button within screen */
   width: 100%;
-  color: #000000;
-  font-size: 18px;
+  color: #ffffff; /* Ensure text color contrasts with the background */
+  font-size: 16px;
   cursor: pointer;
-  margin-top: 15px;
-  font-weight: 690;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .login-link {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px; /* Adjust font size for better fit */
   text-align: center;
   margin-top: 10px;
 }
@@ -104,4 +104,3 @@ button {
   color: #788F70;
   text-decoration: none;
 }
-
