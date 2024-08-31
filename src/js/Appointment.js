@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/AppointmentPage.css'; // Make sure this path is correct
+import '../css/AppointmentPage.css';
 import { FaArrowLeft, FaSearch, FaUserCircle, FaHome, FaUserMd, FaCalendarAlt, FaCogs } from 'react-icons/fa';
+import PhoneFrame from './PhoneFrame';
 
 function App() {
   return (
-    <div className="phone-container">
-      <div className="phone-frame">
+    <PhoneFrame>
         <div className="app-container">
           <Header />
           <div className="content">
@@ -14,8 +14,7 @@ function App() {
           </div>
           <FooterNavigation />
         </div>
-      </div>
-    </div>
+        </PhoneFrame>
   );
 }
 
@@ -54,24 +53,24 @@ const AppointmentCard = ({ title }) => (
 );
 
 const FooterNavigation = () => (
-    <div className="footer-navigation">
-      <div className="icon-container">
-        <FaHome className="icon" />
-        <span className="icon-label">Home</span>
-      </div>
-      <div className="icon-container">
-        <FaUserMd className="icon" />
-        <span className="icon-label">Consult</span>
-      </div>
-      <div className="icon-container">
-        <FaCalendarAlt className="icon" />
-        <span className="icon-label">Schedule</span>
-      </div>
-      <div className="icon-container">
-        <FaCogs className="icon" />
-        <span className="icon-label">Settings</span>
-      </div>
+  <div className="footer-navigation">
+    <div className="icon-container">
+      <FaHome className="icon" />
+      <span className="icon-label">Home</span>
     </div>
-  );
+    <div className="icon-container">
+      <FaUserMd className="icon" />
+      <span className="icon-label">Consult</span>
+    </div>
+    <div className="icon-container">
+      <FaCalendarAlt className="icon" />
+      <span className="icon-label">Schedule</span>
+    </div>
+    <div className="icon-container">
+      <FaCogs className="icon" />
+      <span className="icon-label">Settings</span>
+    </div>
+  </div>
+);
 
 export default App;

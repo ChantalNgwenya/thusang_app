@@ -1,51 +1,60 @@
 import React from 'react';
 import '../css/Settings.css';
+import { FaArrowLeft, FaUserCircle, FaBell, FaShieldAlt, FaCogs, FaInfoCircle, FaSignOutAlt } from 'react-icons/fa';
 
 const Settings = () => {
   return (
-    <div className="settings-container">
-      <header className="settings-header">
-        <button className="back-button">←</button>
-        <h1>Settings</h1>
-      </header>
-      <div className="settings-list">
-        <div className="settings-item">
-          {/* span<i className="icon">👤</i> */}
-          <span>Profile</span>
-          <span className="arrow">›</span>
-        </div>
-        <div className="settings-item">
-          {/* <i className="icon">🔔</i> */}
-          <span>Notifications</span>
-          <span className="arrow">›</span>
-        </div>
-        <div className="settings-item">
-          {/* <i className="icon">🛡️</i> */}
-          <span>Privacy</span>
-          <span className="arrow">›</span>
-        </div>
-        <div className="settings-item">
-          {/* <i className="icon">⚙️</i> */}
-          <span>General</span>
-          <span className="arrow">›</span>
-        </div>
-        <div className="settings-item">
-          {/* <i className="icon">ℹ️</i> */}
-          <span>About Us</span>
-          <span className="arrow">›</span>
-        </div>
-        <div className="settings-item">
-          {/* <i className="icon">↗️</i> */}
-          <span>Logout</span>
-          <span className="arrow">›</span>
+    <div className="phone-screen">
+      <div className="settings-container">
+        <header className="settings-header">
+            <button className="back-button"><FaArrowLeft /></button>
+          <h1>Settings</h1>
+        </header>
+        <div className="settings-list">
+          <div className="settings-item profile-item">
+            <div className="icon-wrapper">
+              <FaUserCircle className="icon" />
+              <span>Profile</span>
+            </div>
+            <span className="arrow">›</span>
+          </div>
+          <div className="settings-item">
+            <div className="icon-wrapper">
+              <FaBell className="icon" />
+              <span>Notifications</span>
+            </div>
+            <span className="arrow">›</span>
+          </div>
+          <div className="settings-item">
+            <div className="icon-wrapper">
+              <FaShieldAlt className="icon" />
+              <span>Privacy</span>
+            </div>
+            <span className="arrow">›</span>
+          </div>
+          <div className="settings-item">
+            <div className="icon-wrapper">
+              <FaCogs className="icon" />
+              <span>General</span>
+            </div>
+            <span className="arrow">›</span>
+          </div>
+          <div className="settings-item">
+            <div className="icon-wrapper">
+              <FaInfoCircle className="icon" />
+              <span>About Us</span>
+            </div>
+            <span className="arrow">›</span>
+          </div>
+          <div className="settings-item">
+            <div className="icon-wrapper">
+              <FaSignOutAlt className="icon" />
+              <span>Logout</span>
+            </div>
+            <span className="arrow">›</span>
+          </div>
         </div>
       </div>
-    <footer className="footer-nav">
-        <span className="nav-icon">🏠</span>
-        <span className="nav-icon">💻</span>
-        <span className="nav-icon">🗓️</span>
-        <span className="nav-icon">⚙️</span>
-    </footer>
     </div>
   );
 };

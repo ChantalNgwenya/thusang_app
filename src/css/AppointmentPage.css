@@ -5,13 +5,13 @@
   align-items: center;
   height: 100vh;
   background-color: #f0f0f0; /* Light grey background */
-  transform: scale(0.8); /* Scale down to 80% */
+  transform: scale(0.7); /* Scale down to 70% */
   transform-origin: center; /* Center the scaling */
 }
 
 /* iPhone Frame */
 .phone-frame {
-  width: 375px; /* Adjust width based on the iPhone model */
+  width: 389px; /* Adjust width based on the iPhone model */
   height: 812px; /* Adjust height based on the iPhone model */
   background-image: url('../iphone.png'); /* Replace with the correct path */
   background-size: cover;
@@ -20,7 +20,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px; /* Adjust padding to fit the screen area */
+  padding: 47px; /* Remove padding to fit content properly */
+}
+
+@media (max-width: 600px) {
+  .phone-container {
+    transform: scale(0.6); /* Zoom out more for smaller screens */
+  }
 }
 
 /* App Container */
@@ -30,9 +36,11 @@
   background-color: #d0d7be;
   border-radius: 30px; /* Adjust to fit inside the iPhone frame */
   overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
 }
 
-/* Rest of your CSS remains the same */
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -74,12 +82,14 @@
   color: #000000;
 }
 
+/* Content Area */
 .content {
-  flex: 1;
+  flex: 1; /* Allow this section to take up available space */
   padding: 20px;
-  overflow-y: auto;
+  overflow-y: auto; /* Enable scrolling if content overflows */
 }
 
+/* Appointment Section */
 .appointment-section {
   margin-bottom: 20px;
 }
@@ -104,6 +114,7 @@
   text-decoration: none;
 }
 
+/* Appointment Card */
 .appointment-card {
   background-color: #ffffff;
   padding: 20px;
@@ -121,6 +132,7 @@
   margin-bottom: 10px;
 }
 
+/* Footer Navigation */
 .footer-navigation {
   display: flex;
   justify-content: space-around;
@@ -146,4 +158,19 @@
   font-size: 12px;
   margin-top: 5px;
   text-align: center;
+}
+
+
+/* Custom Scrollbar for Webkit Browsers */
+.content::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
 }

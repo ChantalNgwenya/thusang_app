@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from 'react'; // Import useState and useEffect
-// import { Link } from 'react-router-dom'; // Import Link
-
+import React, { useState, useEffect } from 'react';
+// import { Link } from 'react-router-dom';
 import '../css/WelcomePage.css';
-
-import logo from '../images/Thusang-logo.jpg'; // Make sure this path is correct
-
+import logo from '../images/Thusang-logo.jpg'; 
 
 const WelcomePage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,6 +36,7 @@ const WelcomePage = () => {
   );
 
   return (
+    <div className="phone-screen">
     <div className="welcome-container">
       <img src={logo} alt="Thusang Logo" className="logo" />
       <h1>Welcome to Thusang</h1>
@@ -54,6 +52,7 @@ const WelcomePage = () => {
       </div>
         <button className="account-button">Create an Account</button>
       <button className="login-button">Login</button>
+    </div>
     </div>
   );
 };
