@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Telemedicine from './js/Telemedicine';
+import Telemedicine from './js/Telemedicine';
 // import Settings from './js/Settings';
 // import WelcomePage from './js/WelcomePage';
 // import SignupPage from './js/SignupPage';
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Routes>
         {/* <Route path="/" element={<Settings />} /> */}
-        {/* <Route path='/'element={<Telemedicine/>} /> */}
+        <Route path='/'element={<Telemedicine/>} />
         {/* <Route path="/" element={<WelcomePage />} /> */}
         {/* <Route path="/" element={<SignupPage />} /> */}
         {/* <Route path="/" element={<LoginPage />} /> */}

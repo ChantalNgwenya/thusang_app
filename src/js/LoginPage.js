@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/LoginPage.css';
-import welcomeImage from '../18.png';
+import welcomeImage from '../images/login.png';
 import { MdEmail, MdPerson, MdLock } from 'react-icons/md';
 
 const Login = () => {
