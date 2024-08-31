@@ -1,107 +1,164 @@
-.telemedicine-container {
-    background-color: #6B7663;
-    height: 100vh;
-    position: relative;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  .back-button {
-    font-size: 24px;
-    cursor: pointer;
-    background-color:#6B7663;
-    /* position: absolute; */
-    width: 22px;
-    height: 34px;
-    left: 35px;
-    top: 89.3px;
+.phone-screen {
+  width: 358px;
+  height: 690px;
+  border: 12px solid black;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+}
 
-  }
-  
-  .header h1 {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #000000;
-  }
-  
-.consultation-grid{
-  height: 658px;
+/* App Container */
+.app-container {
+  width: 100%;
+  height: 100%;
+  background-color: #6B7663;
+  border-radius: 33px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 30px 0; /* Padding for better content spacing */
+}
 
-}  
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjusted padding for better alignment */
+}
 
-/* .icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .search-icon {
-    background: #000000;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
-  
-  .profile-icon {
-    background: #000000;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .consultation-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  .consultation-grid > div {
-    width: 143px;
-    height: 143px;
-    background-color: #FFFFFF;
-    border-radius: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .consultation-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */
-  
-  .footer-navigation {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px 0;
-    background-color: #6b715c;
-    color: white;
-    font-size: 14px;
-  }
-  
-  .footer-navigation .icon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-navigation .icon {
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .footer-navigation .icon-label {
-    font-size: 12px;
-    margin-top: 5px;
-    text-align: center;
-  }
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header .back-button {
+  background: none;
+  border: none;
+  font-size: 19px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+  flex: 1;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Consultation Grid Container */
+.consultation-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* Padding around the grid */
+  flex-grow: 1;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjusted gap to align with the design */
+  justify-content: center;
+  align-items: center;
+  max-width: 240px; /* Adjusted max-width to better fit the design */
+  width: 100%;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0C4152;
+  padding: 15px;
+  border-radius: 40%; /* Circular buttons */
+  margin: 5px; /* Adjusted margin for better spacing */
+  text-align: center;
+  color: white;
+  width: 110px; /* Reduced size to better fit the grid */
+  height: 110px;
+}
+
+/* Icon Image */
+.icon-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1px;
+}
+
+/* Text Container */
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 10px; /* Adjusted font size to match the design */
+  margin: 0;
+}
+
+.phone-number {
+  font-size: 8px; /* Adjusted font size to match the design */
+  margin: 0;
+}
+
+/* Footer Navigation */
+.footer-navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #6b715c;
+  color: white;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-label {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Custom Scrollbar Styles */
+.app-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.app-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.app-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
