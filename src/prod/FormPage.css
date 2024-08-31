@@ -1,0 +1,119 @@
+.page-container {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    background-color: #F5F5F5;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #DCD3CD;
+  }
+  
+  .backButton {
+    width: 22px;
+    height: 34px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transform: rotate(-179.2deg);
+  }
+  
+  .closeButton {
+    width: 22px;
+    height: 34px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transform: rotate(0deg);
+  }
+  
+  .formContainer {
+    position: absolute;
+    width: 349px;
+    height: 491px;
+    left: 21px;
+    top: 151px;
+    background-color: #DCD3CD;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .formHeader {
+    font-family: 'Be Vietnam';
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-family: 'Be Vietnam';
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    width: 175px;
+    height: 40px;
+    background-color: #788F70;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #6b715c;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .footer-navigation .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-navigation .icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .footer-navigation .icon-label {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
