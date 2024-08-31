@@ -1,52 +1,46 @@
-/* Phone Container */
-.phone-container {
+.phone-screen {
+  width: 358px;
+  height: 690px;
+  border: 12px solid black;
+  border-radius: 45px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0; /* Light grey background */
-  transform: scale(0.7); /* Scale down to 70% */
-  transform-origin: center; /* Center the scaling */
-}
-
-/* iPhone Frame */
-.phone-frame {
-  width: 389px; /* Adjust width based on the iPhone model */
-  height: 812px; /* Adjust height based on the iPhone model */
-  background-image: url('../iphone.png'); /* Replace with the correct path */
-  background-size: cover;
-  background-position: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 47px; /* Remove padding to fit content properly */
+  background-color: transparent;
+  padding: 0;
 }
 
-@media (max-width: 600px) {
-  .phone-container {
-    transform: scale(0.6); /* Zoom out more for smaller screens */
-  }
-}
-
-/* App Container */
 .app-container {
-  width: 100%; /* Full width inside the phone frame */
-  height: 100%; /* Full height inside the phone frame */
+  width: 100%;
+  height: 100%;
   background-color: #d0d7be;
-  border-radius: 30px; /* Adjust to fit inside the iPhone frame */
-  overflow: hidden;
+  border-radius: 33px; 
   display: flex;
-  flex-direction: column; /* Stack children vertically */
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
 }
 
-/* Header */
+.app-container {
+  width: 100%;
+  height: 100%;
+  background-color: #d0d7be;
+  border-radius: 30px; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #d0d7be;
+  flex-shrink: 0;
 }
 
 .header-left {
@@ -82,14 +76,12 @@
   color: #000000;
 }
 
-/* Content Area */
 .content {
-  flex: 1; /* Allow this section to take up available space */
+  flex: 1;
   padding: 20px;
-  overflow-y: auto; /* Enable scrolling if content overflows */
+  overflow-y: auto;
 }
 
-/* Appointment Section */
 .appointment-section {
   margin-bottom: 20px;
 }
@@ -114,10 +106,9 @@
   text-decoration: none;
 }
 
-/* Appointment Card */
 .appointment-card {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 1px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -132,7 +123,6 @@
   margin-bottom: 10px;
 }
 
-/* Footer Navigation */
 .footer-navigation {
   display: flex;
   justify-content: space-around;
@@ -160,17 +150,15 @@
   text-align: center;
 }
 
-
-/* Custom Scrollbar for Webkit Browsers */
 .content::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 8px;
 }
 
 .content::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color of the scrollbar handle */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #888;
+  border-radius: 10px;
 }
 
 .content::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Darker color on hover */
+  background-color: #555;
 }
