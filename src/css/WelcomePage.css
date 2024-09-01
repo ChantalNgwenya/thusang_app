@@ -20,15 +20,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #788F70;
+  /* background-color: #788F70; */
   padding: 20px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .logo {
-  max-width: 290px;
-  height: 490px;
-  margin-top: 190px;
+  width: 270px;
+  height: 450px;
+  margin-top: 20px;
 }
 
 h1, p {
